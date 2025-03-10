@@ -30,10 +30,10 @@
 
         <div class="wrap-menu-desktop">
             <nav class="limiter-menu-desktop container">
-
+                <?php $design = $db->read("design", "*", "id = 1");?>
                 <!-- Logo desktop -->
                 <a href="#" class="logo">
-                    <img src="images/icons/logo-01.png" alt="IMG-LOGO">
+                    <img src="./admin/uploads/icons/<?= $design['front_shop']?>" alt="IMG-LOGO">
                 </a>
 
                 <!-- Menu desktop -->
@@ -77,14 +77,14 @@
                     </div>
 
                     <div
-                        class="icon-header-item cart-length cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="<?=count($_SESSION['cart'])?>">
+                        class="icon-header-item cart-length cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="<?= count($_SESSION['cart']) ?>">
                         <i class="zmdi zmdi-shopping-cart"></i>
                     </div>
 
-<!--                    <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"-->
-<!--                        data-notify="0">-->
-<!--                        <i class="zmdi zmdi-favorite-outline"></i>-->
-<!--                    </a>-->
+                    <!--                    <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"-->
+                    <!--                        data-notify="0">-->
+                    <!--                        <i class="zmdi zmdi-favorite-outline"></i>-->
+                    <!--                    </a>-->
                 </div>
             </nav>
         </div>

@@ -21,6 +21,14 @@
             </a>
         </li>
         <li class="sidebar-item">
+            <a class="sidebar-link" href="./index.php?p=design" aria-expanded="false">
+                <span>
+                    <i class="ti ti-palette"></i>
+                </span>
+                <span class="hide-menu">Design</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
             <a class="sidebar-link" href="./index.php?p=brand" aria-expanded="false">
                 <span>
                     <i class="ti ti-clipboard"></i>
